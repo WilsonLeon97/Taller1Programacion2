@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Date: Nov 16-2021
+ * Date: Nov 18-2021
  * This is a simple application for...
  * @author WilsonLeon97
  * @version 1.0
@@ -14,16 +14,16 @@ import java.util.regex.Pattern;
 
 public class Funciones {
 	
-	final String message = "Sogamoso ciudad del sol y del acero";
+	//String message= "gshjdgsjhdgbdshfj";
 	
 	/**
 	 * This method Convert the content of the string to its own name
 	 * @return
 	 */
-	public String Convert() {
-		String menssaje = message;
+	public String Convert(String entrada) {
+		//String menssaje = message;
 	      StringBuffer strbf = new StringBuffer();
-	      Matcher match = Pattern.compile("([a-z])([a-z]*)", Pattern.CASE_INSENSITIVE).matcher(menssaje);
+	      Matcher match = Pattern.compile("([a-z])([a-z]*)", Pattern.CASE_INSENSITIVE).matcher(entrada);
 	      while(match.find()) 
 	      {
 	         match.appendReplacement(strbf, match.group(1).toUpperCase() + match.group(2).toLowerCase());
@@ -37,11 +37,11 @@ public class Funciones {
 	 * @param buscarrepeticion
 	 * @return
 	 */
-	public int buscarRepeticion(String buscarrepeticion) {
+	public int buscarRepeticion(String buscarrepeticion, String buscarrepeticion1) {
 		int contador=0;
-		String[] palabras = message.split(" ");
+		String[] palabras = buscarrepeticion.split(" ");
 		for (int s = 0; s < palabras.length; s++) {
-			if (palabras[s].equalsIgnoreCase(buscarrepeticion)) {
+			if (palabras[s].equalsIgnoreCase(buscarrepeticion1)) {
 				 contador += 1;
 			}
 
@@ -54,35 +54,27 @@ public class Funciones {
 	 * @param encriptar
 	 * @return
 	 */
-	public String encriptar(String encriptar) {
+	public String contarVocales(String cadena) {
 
-		char array[] = encriptar.toCharArray();
+		char array[] = cadena.toCharArray();
 
-		for (int i = 0; i < array.length; i++) {
-			array[i] = (char) (array[i] + (char)5);
-		}
-		String encriptado = String.valueOf(array);
-		String mensaje = "Mensaje encriptado: " + encriptado;
-		return mensaje;
+		 int count = 0;
+		  
+	        for (int i = 0; i < cadena.length(); i++){
+	            if (cadena.charAt(i) == 'a' || cadena.charAt(i) == 'e'
+	                || cadena.charAt(i) == 'i'
+	                || cadena.charAt(i) == 'o'
+	                || cadena.charAt(i) == 'u')
+	            {
+	                count++;
+	            }
+	        }
+	 
+	        String mensaje = "Total de vocales en String: " + count;
+	        return mensaje;
 
 	}
 
-
-	/**
-	 * Method that decrypts the string
-	 * @param mms
-	 * @return
-	 */
-	public String desencriptar(String mms) {
-		char arrayD[] = mms.toCharArray();
-
-		for (int i = 0; i < arrayD.length; i++) {
-			arrayD[i] = (char) (arrayD[i] - (char)5);
-		}
-		String desencriptado = String.valueOf(arrayD);
-		String mensaje = "Mensaje desencriptado: " + desencriptado;
-		return mensaje; 
-	}
 	
 	/**
 	 * Method that adds characters to the left or right
@@ -91,21 +83,21 @@ public class Funciones {
 	 * @param operacion
 	 * @return
 	 */
-	public String llenarCaracteres(char caracter1, int cantidad, int operacion) {
-		String cadena =message;
+	public String llenarCaracteres(String frase, char caracter1, int cantidad, int operacion) {
+		//String cadena =message;
 		if (operacion==1) {
 			for (int i = 0; i < cantidad; i++) {
-				cadena = caracter1 + cadena;
+				frase = caracter1 + frase;
 			}
 
 		}else if (operacion==2) {
 			for (int i = 0; i < cantidad; i++) {
-				cadena = cadena + caracter1;
+				frase = frase + caracter1;
 
 			}
 		}
 
-		return cadena;
+		return frase;
 	}
 	
 	/**
@@ -113,12 +105,12 @@ public class Funciones {
 	 * @param caracter1
 	 * @return
 	 */
-	public String borrarCaracteres(char caracter1) {
+	public String borrarCaracteres(String cadena, char caracter1) {
 
-		String mensajen = message;
-		for (int i = 0; i < message.length(); i++) {
-			if (message.charAt(i)==caracter1) {
-				mensajen = message.replace(caracter1, ' ');
+		String mensajen = cadena;
+		for (int i = 0; i < cadena.length(); i++) {
+			if (cadena.charAt(i)==caracter1) {
+				mensajen = cadena.replace(caracter1, ' ');
 			}
 		}
 		return mensajen;
@@ -146,34 +138,21 @@ public class Funciones {
 
 	}
 	
-	/**
-	 * @param cadena 
-	 * @return
-	 */
-	public String diferencia(String cadena) {
-		String mensaje = message;
-		for(int i = 0 ; i<cadena.length() ;i++) {
-			for(int j = 0 ; j<message.length() ; j++) {
-			if(cadena.charAt(i) == message.charAt(j)) {
-				mensaje = mensaje.replace(message.charAt(j), ' ');
-		}
-		}
-		}
-		return mensaje;
-	}
 	
 	/**
 	 * 
 	 * @param cadena
 	 * @return
 	 */
-	public String borrarCaracteresCadena(String cadena) {
+	
+	//corregir
+	public String borrarCaracteresCadena(String cadena, String cadenaBorrar) {
 
-		String mensaje = message;
+		String mensaje = cadena;
 		int i = 0;
 		for(int j = 0 ; j==i ; j++) {
-			if(cadena.charAt(j) == message.charAt(i)) {
-				mensaje = mensaje.replace(message.charAt(i), ' ');
+			if(cadena.charAt(j) == cadena.charAt(i)) {
+				mensaje = mensaje.replace(cadena.charAt(i), ' ');
 				i++;
 				continue;
 			}else if (cadena.charAt(j) != mensaje.charAt(i)){
