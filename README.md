@@ -1,5 +1,5 @@
 # Taller Colaborativo programación II
-# Taller Colaborativo Programacion II
+
 
 ## Integrantes:
 
