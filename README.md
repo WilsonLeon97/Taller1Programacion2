@@ -9,7 +9,7 @@
   - [X]  Buscar cadena de caracteres
   - [X]  Contar Vocales
   - [X]  Contar Palabras
-  - Autoevaluación :
+  - Autoevaluación :4.5
   - Coevaluación:
     - Geraldine:5.0
     - Dilan:
@@ -23,7 +23,7 @@
   - [X]   Borrar caracteres
   - Autoevaluación :4.5
   - Coevaluación:
-    - Wilson:
+    - Wilson:5.0
     - Dilan: 
     ### Total: 
   - Heteroevaluación:
@@ -36,7 +36,7 @@
   - Autoevaluación :  4.5
   - Coevaluación:
     - Geraldine:5.0
-    - Wilson:  
+    - Wilson:5.0
     ### Total:
   - Heteroevaluación:
 ## IDE:
