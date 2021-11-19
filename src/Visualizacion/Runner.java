@@ -50,7 +50,9 @@ public class Runner {
 		}
 		case 4: {
 			
-			//falta
+			String hora = JOptionPane.showInputDialog("Ingrese la hora (00:00)");
+			JOptionPane.showMessageDialog(null, "Faltan  "+funciones.anionuevo(hora) + "  minutos para año nuevo");
+			
 			break;
 		}
 		case 5: {
@@ -84,16 +86,20 @@ public class Runner {
 		}
 		case 9: {
 			//corregir lanza exception java.lang.StringIndexOutOfBoundsException
-			String cadena = JOptionPane.showInputDialog(null, "Ingrese cadena");
-			String caracter = JOptionPane.showInputDialog(null, "ingrese cadena de caracteres");
-			JOptionPane.showMessageDialog(null, funciones.borrarCaracteresCadena(cadena, caracter));
+			String cadena = JOptionPane.showInputDialog(null, "Ingrese cadena a contar palabras");
+			JOptionPane.showMessageDialog(null, "la cadena ingresada tiene  " + funciones.cuentaPalabras(cadena) + "  palabras");
 			
 			
 			break;
 		}
 		case 10:{
 			
-			
+			String correo = JOptionPane.showInputDialog(null, "Ingrese correo electronico");
+			if(funciones.compruebaCorreo(correo)==true) {
+				JOptionPane.showMessageDialog(null, "El correo electronico ingresado es válido ");
+			}else {
+				JOptionPane.showMessageDialog(null, "El correo electronico ingresado NO es válido ");
+			}
 			break;
 		}
 

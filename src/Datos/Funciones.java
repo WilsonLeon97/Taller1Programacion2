@@ -162,4 +162,38 @@ public class Funciones {
 		
 		return mensaje;
 	}
+	
+	public int anionuevo(String hora) {
+		
+		String[] horafrac = hora.split(":");
+		int horas = Integer.parseInt(horafrac[0]);
+		int minutos = Integer.parseInt(horafrac[1]);
+		
+		int minutostotales = (((23-horas)*60)+(59-minutos));
+		
+		return minutostotales;
+	}
+	
+	public boolean compruebaCorreo(String correo){
+		
+		Pattern pattern = Pattern
+                .compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+                        + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
+ 
+ 
+        Matcher mather = pattern.matcher(correo);
+        
+        if (mather.find() == true) {
+            return true;
+        } else {
+            return false;
+        }
+        
+	}
+	
+	public int cuentaPalabras(String cadena) {
+		
+		String[] palabras = cadena.split(" ");
+		return palabras.length;
+	}
 	}
