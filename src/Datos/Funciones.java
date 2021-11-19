@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 /**
  * Date: Nov 18-2021
  * This is a simple application for...
- * @author WilsonLeon97
+ * @author Wilson Leon, Gerldine Parada 
  * @version 1.0
  *
  */
