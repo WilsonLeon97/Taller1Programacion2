@@ -12,7 +12,7 @@
   - Autoevaluación :4.5
   - Coevaluación:
     - Geraldine:5.0
-    - Dilan:
+    - Dilan:5.0
     ### Total: 
   - Heteroevaluación:
   
@@ -24,7 +24,7 @@
   - Autoevaluación :4.5
   - Coevaluación:
     - Wilson:5.0
-    - Dilan: 
+    - Dilan:5.0 
     ### Total: 
   - Heteroevaluación:
 
