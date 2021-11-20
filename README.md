@@ -28,7 +28,7 @@
     ### Total: 
   - Heteroevaluación:
 
-- Dilan Galeano Hoyos
+- Dilan Ferney Galeano Hoyos
   ### Asignaciones:
   - [X]  Intersección
   - [X]  Eliminar repetidos
