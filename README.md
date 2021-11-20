@@ -20,7 +20,7 @@
   ### Asignaciones:
   - [X]   Año nuevo
   - [X]   LLenar caracteres
-  - [X]   Borrar caracteres
+  - [X]   Diagrama de clases
   - Autoevaluación :4.5
   - Coevaluación:
     - Wilson:5.0
@@ -33,6 +33,7 @@
   - [X]  Intersección
   - [X]  Eliminar repetidos
   - [X]  Validar dirección de correo electrónico
+  - [X]  Borrar caracteres
   - Autoevaluación :  4.5
   - Coevaluación:
     - Geraldine:5.0
