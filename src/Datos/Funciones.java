@@ -145,23 +145,7 @@ public class Funciones {
 	 * @return
 	 */
 	
-	//corregir
-	public String borrarCaracteresCadena(String cadena, String cadenaBorrar) {
-
-		String mensaje = cadena;
-		int i = 0;
-		for(int j = 0 ; j==i ; j++) {
-			if(cadena.charAt(j) == cadena.charAt(i)) {
-				mensaje = mensaje.replace(cadena.charAt(i), ' ');
-				i++;
-				continue;
-			}else if (cadena.charAt(j) != mensaje.charAt(i)){
-				break;
-			}
-		}
-		
-		return mensaje;
-	}
+	
 	
 	public int anionuevo(String hora) {
 		
@@ -196,4 +180,41 @@ public class Funciones {
 		String[] palabras = cadena.split(" ");
 		return palabras.length;
 	}
+    public static String remover(String texto, String texto2) {
+
+ 	   texto = texto.replace(texto2, "");
+
+	         return texto;
+   }
+
+
+
+public  String eliminar(String str){
+	StringBuilder sb=new StringBuilder();
+ for(int i=0;i<str.length();i++){
+     if(str.indexOf(str.charAt(i))==i){
+         sb.append(str.charAt(i));
+     }
+
+ }
+ String result=sb.toString();
+ return result;
+}
+ 
+   public static int contarPalabras(String msj) {
+
+		int cantidad = 1;
+		String palabra = msj;
+
+		palabra= palabra.trim();
+		for (int i = 0; i <palabra.length(); i++) {
+			if (palabra.charAt(i) == ' ') {
+				cantidad++;
+			}
+		}
+
+		return cantidad;
+
+	}
+
 	}

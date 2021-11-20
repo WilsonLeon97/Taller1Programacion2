@@ -67,11 +67,9 @@ public class Runner {
 			break;
 		}
 		case 6: {
-			//corregir lanza exception java.lang.StringIndexOutOfBoundsException
 			String cadena = JOptionPane.showInputDialog(null, "Ingrese cadena");
-			String caracter3 = JOptionPane.showInputDialog(null, "Ingrese caracter");
-			JOptionPane.showMessageDialog(null, funciones.borrarCaracteresCadena(cadena, caracter3));
-			break;
+			String caracter4 = JOptionPane.showInputDialog(null, "Ingrese caracter");
+			JOptionPane.showMessageDialog(null, funciones.remover(cadena, caracter4));
 		}
 		case 7: {
 
@@ -80,16 +78,13 @@ public class Runner {
 			break;
 		}
 		case 8: {
-
-			//faltante
+			String cadena1 = JOptionPane.showInputDialog(null, "Ingrese cadena");
+			JOptionPane.showMessageDialog(null, funciones.eliminar(cadena1));
 			break;
 		}
 		case 9: {
-			//corregir lanza exception java.lang.StringIndexOutOfBoundsException
-			String cadena = JOptionPane.showInputDialog(null, "Ingrese cadena a contar palabras");
-			JOptionPane.showMessageDialog(null, "la cadena ingresada tiene  " + funciones.cuentaPalabras(cadena) + "  palabras");
-			
-			
+			String cadena = JOptionPane.showInputDialog(null, "Ingrese cadena");
+			JOptionPane.showMessageDialog(null, funciones.contarPalabras(cadena));
 			break;
 		}
 		case 10:{
