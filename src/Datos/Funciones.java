@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 /**
  * Date: Nov 18-2021
  * This is a simple application for...
- * @author Wilson Leon, Geraldine Parada 
+ * @author Wilson Leon, Geraldine Parada, Dilan Galeano 
  * @version 1.0
  *
  */
@@ -18,7 +18,7 @@ public class Funciones {
 	
 	/**
 	 * This method Convert the content of the string to its own name
-	 * @return
+	 * @return metedo para convertir
 	 */
 	public String Convert(String entrada) {
 		//String menssaje = message;
@@ -35,7 +35,7 @@ public class Funciones {
 	/**
 	 * method that looks for Character string
 	 * @param buscarrepeticion
-	 * @return
+	 * @return meteodo que detecta la cantidad de veces que se repite un caracter
 	 */
 	public int buscarRepeticion(String buscarrepeticion, String buscarrepeticion1) {
 		int contador=0;
@@ -52,7 +52,7 @@ public class Funciones {
 	/**
 	 * Method that encrypts the string
 	 * @param encriptar
-	 * @return
+	 * @return metodo que cuenta la cantidad de vocales que se insertan 
 	 */
 	public String contarVocales(String cadena) {
 
@@ -81,7 +81,7 @@ public class Funciones {
 	 * @param caracter1
 	 * @param cantidad
 	 * @param operacion
-	 * @return
+	 * @return meteodo complementa dos caracteres y da a escoger izquierda o derecha
 	 */
 	public String llenarCaracteres(String frase, char caracter1, int cantidad, int operacion) {
 		//String cadena =message;
@@ -103,7 +103,7 @@ public class Funciones {
 	/**
 	 * Method that deletes characters entered by keyboard
 	 * @param caracter1
-	 * @return
+	 * @return metodo que borra caracteres de una cadena 
 	 */
 	public String borrarCaracteres(String cadena, char caracter1) {
 
@@ -120,7 +120,7 @@ public class Funciones {
 	
 
 	/**
-	 * @param message
+	 * @param message metodo para la Interseccion 
 	 */
 	private static void Interseccion(String message) {
 		String palabra = "colombia";
@@ -139,13 +139,12 @@ public class Funciones {
 	}
 	
 	
+	
 	/**
 	 * 
-	 * @param cadena
-	 * @return
+	 * @param hora
+	 * @return metodo del año nuevo
 	 */
-	
-	
 	
 	public int anionuevo(String hora) {
 		
@@ -157,6 +156,12 @@ public class Funciones {
 		
 		return minutostotales;
 	}
+	
+	/**
+	 * 
+	 * @param correo
+	 * @return metodo para la validacion de correos electronicos
+	 */
 	
 	public boolean compruebaCorreo(String correo){
 		
@@ -174,12 +179,23 @@ public class Funciones {
         }
         
 	}
+	/**
+	 * 
+	 * @param cadena
+	 * @return metodo que cuenta la cantidad de palabras que existen en una cadena de caracteres
+	 */
 	
 	public int cuentaPalabras(String cadena) {
 		
 		String[] palabras = cadena.split(" ");
 		return palabras.length;
 	}
+	/**
+	 * 
+	 * @param texto
+	 * @param texto2
+	 * @return metedo que remueve un caracter repetido
+	 */
     public static String remover(String texto, String texto2) {
 
  	   texto = texto.replace(texto2, "");
@@ -187,7 +203,11 @@ public class Funciones {
 	         return texto;
    }
 
-
+/**
+ * 
+ * @param str
+ * @return metedo para eliminar un caracter de una cadena 
+ */
 
 public  String eliminar(String str){
 	StringBuilder sb=new StringBuilder();
@@ -200,7 +220,11 @@ public  String eliminar(String str){
  String result=sb.toString();
  return result;
 }
- 
+ /**
+  * 
+  * @param msj
+  * @return metodo que cuenta la cantidad de palabras que existen en una cadena de caracteres
+  */
    public static int contarPalabras(String msj) {
 
 		int cantidad = 1;

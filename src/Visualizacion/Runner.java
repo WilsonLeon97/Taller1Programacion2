@@ -68,7 +68,7 @@ public class Runner {
 		}
 		case 6: {
 			String cadena = JOptionPane.showInputDialog(null, "Ingrese cadena");
-			String caracter4 = JOptionPane.showInputDialog(null, "Ingrese caracter");
+			String caracter4 = JOptionPane.showInputDialog(null, "Ingrese el o los caracteres que deseas eliminar");
 			JOptionPane.showMessageDialog(null, funciones.remover(cadena, caracter4));
 		}
 		case 7: {
